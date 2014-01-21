@@ -3,6 +3,7 @@ package org.uze.jfxapp;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.ToolBar;
+import org.uze.jfx.Form;
 
 /**
  * Created by Uze on 21.01.14.

@@ -4,6 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import org.uze.jfx.ModalDialog;
+import org.uze.jfx.ModalResult;
 
 /**
  * Created by Uze on 19.01.14.

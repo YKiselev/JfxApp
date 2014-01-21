@@ -2,6 +2,8 @@ package org.uze.jfxapp;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import org.uze.jfx.Form;
+import org.uze.jfx.ModalResult;
 
 import java.util.Locale;
 
