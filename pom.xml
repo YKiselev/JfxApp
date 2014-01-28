@@ -16,6 +16,12 @@
             <scope>system</scope>
             <systemPath>${java.home}/lib/jfxrt.jar</systemPath>
         </dependency>
+
+        <dependency>
+            <groupId>com.oracle.coherence</groupId>
+            <artifactId>coherence</artifactId>
+            <version>12.1.2-0-0</version>
+        </dependency>
     </dependencies>
 
     <build>

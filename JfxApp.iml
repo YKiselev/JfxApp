@@ -20,6 +20,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: com.oracle.coherence:coherence:12.1.2-0-0" level="project" />
   </component>
 </module>
 

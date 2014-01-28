@@ -9,9 +9,7 @@ import java.util.Locale;
 /**
  * Created by Uze on 19.01.14.
  */
-public class ModalDialog extends Form {
-
-    public static final String KEY_TITLE = "title";
+public abstract class ModalDialog extends Form {
 
     protected ModalResult modalResult;
 

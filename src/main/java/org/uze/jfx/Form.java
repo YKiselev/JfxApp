@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 /**
  * Created by Uze on 21.01.14.
  */
-public class Form {
+public abstract class Form {
 
     public static final String KEY_TITLE = "title";
 

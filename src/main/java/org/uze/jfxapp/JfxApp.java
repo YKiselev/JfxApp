@@ -19,14 +19,13 @@ public class JfxApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         if (performUserLogon(stage)) {
-            MainForm mainForm = Form.load(MainForm.FXML_NAME, null, stage);
-
-            stage.show();
+            final MainForm mainForm = Form.load(MainForm.FXML_NAME, Locale.getDefault(), stage);
+            mainForm.getStage().show();
         }
     }
 
     private boolean performUserLogon(Stage stage) {
-        LogonDialog dlg = LogonDialog.loadModalDialog(LogonDialog.FXML_NAME, Locale.getDefault(), stage);
+        final LogonDialog dlg = LogonDialog.loadModalDialog(LogonDialog.FXML_NAME, Locale.getDefault(), stage);
 
         dlg.setUserName("test1");
         dlg.setPassword("123456");

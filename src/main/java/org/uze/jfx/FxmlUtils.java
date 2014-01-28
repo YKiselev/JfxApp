@@ -21,8 +21,12 @@ public final class FxmlUtils {
         }
         ResourceBundle resourceBundle = null;
         if (locale != null) {
-            final String bundleName = "bundles." + name;
-            resourceBundle = ResourceBundle.getBundle(bundleName, locale);
+            // Check if default resource bundle exists
+            final URL bundleUrl = FxmlUtils.class.getResource("/bundles/" + name + ".properties");
+            if (bundleUrl != null) {
+                final String bundleName = "bundles." + name;
+                resourceBundle = ResourceBundle.getBundle(bundleName, locale);
+            }
         }
         if (resourceBundle != null) {
             return new FXMLLoader(fxmlUrl, resourceBundle);
